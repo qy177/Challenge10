@@ -4,26 +4,44 @@
  </HEAD>
 <BODY>
 <script language="JavaScript"> 
- 
-if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
- var ua = navigator.userAgent.toLowerCase();  
- if(ua.match(/MicroMessenger/i) == 'sina'){
+ window.onload = function(){ 
+if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {  
+ if(is_weibo()){
   alert("这是新浪客户端!");
  }
- if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+ if(is_weixin()){
   alert("这是微信客户端!");
  }
 self.location='itms-apps://itunes.apple.com/us/app/challenge10/id1326860579?mt=8';
-}else{
- var ua1 = navigator.userAgent.toLowerCase();  
- if(ua1.match(/MicroMessenger/i) == 'micromessenger'){
-  alert("正在准备安卓版本");
+}else{ 
+ if(is_weixin()){
+  alert("这是微信客户端!");
 self.location='https://www.baidu.com/';
+ }else if (is_weibo()){
+  alert("这是新浪客户端!");
+self.location='https://www.qq.com/';
  }else{
 alert("Preparing For Android.");
 self.location='https://play.google.com/';
  }
 }
+} 
+ function is_weixin(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}  
+ function is_weibo(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/MicroMessenger/i)=="sina") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}  
 </script>
 </BODY>
 </HTML>
