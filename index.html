@@ -6,7 +6,11 @@
 <script language="JavaScript"> 
  window.onload = function(){ 
 if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {  
+ if (is_weibo()){
+self.location='https://www.taptap.com/app/72913';
+ }else{
 self.location='https://itunes.apple.com/us/app/challenge10/id1326860579?mt=8';
+ }
 }else{ 
  if(is_weixin()){
 self.location='https://www.taptap.com/app/72913';
