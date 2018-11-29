@@ -1,5 +1,5 @@
 # Challenge10
-I am the author of Challenge10.
+I am the author of Challenge10 and PuzNum.
 
 
 Our games don't collect any personal information and doesn't share it with third parties. Hence they are COPPA-compliant.
