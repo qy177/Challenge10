@@ -6,7 +6,7 @@ Our games don't collect any personal information and doesn't share it with third
 
 Our games don't require any extra permissions so we can't collect any personal data.
 
-*Our game <<Challenge10>> use 3rd party Vungle plug in.
+*Our game <Challenge10> use 3rd party Vungle plug in.
 You can find more information here: http://vungle.com/privacy/
 
 
