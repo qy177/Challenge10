@@ -1,4 +1,4 @@
-# Challenge10
+# Challenge10 and PuzNum
 I am the author of Challenge10 and PuzNum.
 
 
